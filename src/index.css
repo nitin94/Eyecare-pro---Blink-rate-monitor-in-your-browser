@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Toast notification custom styles */
+.Toastify__toast {
+  border-radius: 12px;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+.Toastify__progress-bar {
+  background: linear-gradient(90deg, #3B82F6, #1D4ED8);
+}
+
+/* Custom slider styles */
+.slider::-webkit-slider-thumb {
+  appearance: none;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background: #3B82F6;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.slider::-moz-range-thumb {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background: #3B82F6;
+  cursor: pointer;
+  border: none;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Enhanced toast notifications */
+.Toastify__toast--info {
+  background: linear-gradient(135deg, #EBF8FF 0%, #DBEAFE 100%);
+}
+
+.Toastify__toast--warning {
+  background: linear-gradient(135deg, #FFFBEB 0%, #FEF3C7 100%);
+}
+
+.Toastify__toast--error {
+  background: linear-gradient(135deg, #FEF2F2 0%, #FECACA 100%);
+}
+
+.Toastify__toast--success {
+  background: linear-gradient(135deg, #F0FDF4 0%, #DCFCE7 100%);
+}
